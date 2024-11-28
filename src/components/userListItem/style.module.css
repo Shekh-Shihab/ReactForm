@@ -1,0 +1,10 @@
+.useListItem {
+  line-height: 0.5em;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px #ccc;
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1.5em;
+}

@@ -1,0 +1,20 @@
+.container {
+  display: "flex";
+  flex-direction: "column";
+  align-items: "center";
+  justify-content: "center";
+  text-align: center;
+}
+
+.listContainer {
+  width: 400px;
+  margin: 0px auto;
+  overflow: hidden;
+  height: 280px;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+.listContainer:hover {
+  overflow: auto;
+}
