@@ -10,8 +10,9 @@ const Form = () => {
     const name = e.target.elements[0].value;
     const age = e.target.elements[1].value;
     const email = e.target.elements[2].value;
+    const user = { name, age, email };
     try {
-      await UserAPI.addUser(name, age, email);
+      await UserAPI.addUser(user);
       setUserList((prevUserList) => [
         ...prevUserList,
         { id: Date.now(), name, age, email },

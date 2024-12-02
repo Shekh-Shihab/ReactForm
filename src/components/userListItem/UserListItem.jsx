@@ -8,6 +8,7 @@ const UserListItem = ({ id, name, age, email }) => {
   const { setUserList } = useContext(UserListContext);
   const deleteUser = async () => {
     try {
+      console.log(id);
       await UserAPI.deleteUser(id);
       Toast("success", "User deleted successfully");
       setUserList((prevUserList) =>
